@@ -14,3 +14,11 @@ def is_palindrome(string):
 
     print('"{string}" is {arg}a palindrome.'.format(string=string, arg=('' if matches else 'not ')))
     return matches
+
+
+
+if __name__ == '__main__':
+    is_palindrome('qwerty')
+    is_palindrome('kayak')
+    is_palindrome('kAyak')
+    is_palindrome('ka yak')
