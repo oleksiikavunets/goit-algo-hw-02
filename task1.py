@@ -1,11 +1,14 @@
-import time
 from queue import Queue
 
 queue = Queue()
 
+total_requests = 0
+
 
 def generate_request():
-    request = f'Request: {time.time()}'
+    global total_requests
+    total_requests += 1
+    request = f'Request: {total_requests}'
     queue.put(request)
 
     print(f'Request is added - {request}')
