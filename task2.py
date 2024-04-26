@@ -12,5 +12,5 @@ def is_palindrome(string):
 
         matches = first == last
 
+    print('"{string}" is {arg}a palindrome.'.format(string=string, arg=('' if matches else 'not ')))
     return matches
-
